@@ -101,40 +101,147 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    font-size: 30px;
     color: white;
 }
 
-.booking-table{
+.booking-table {
     width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -38%);
+    font-size: 20px;
     text-align: center;
+    background: linear-gradient(rgba(165, 152, 235, 0.7), rgba(82, 33, 155, 0.7)), url(images/beach.gif);
+    background-position: center;
+    background-size: cover;
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.booking-nav{
+.booking-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.booking-head{
+    width: 50%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -390%);
+    text-align: center; 
+}
+
+.booking-head h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.booking-head p {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+#tsubmit, #daysl, #fname, #sname, #pnum, #gmail, #sday, #lday {
+    font-size: 18px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+
+/* -- Contact Information -- */
+
+.contactUs{
+    min-height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 198, 255, 0.6), rgba(9, 198, 255, 0.6)), url(images/Webp.net-gifmaker.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
-.booking-head{
-    transform: translate(0, -50px);
+
+.contact-table {
+    max-width: 600px;
+    position: relative;
+    top: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-table input[type="text"], 
+.contact-table textarea, 
+.contact-table input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    display: block;
+    margin: 8px auto;
+}
+
+.contact-table input[type="text"]:focus, 
+.contact-table textarea:focus, 
+.contact-table input[type="email"]:focus {
+    border-color: #66afe9;
+    background-color: #fff;
+    outline: none;
+}
+
+.contact-table input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #66afe9;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: block;
+    margin: 8px auto;
+}
+
+.contact-table input[type="submit"]:hover {
+    background-color: #559cd6;
+}
+
+.contact-times{
+    width: 50%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -700%);
     text-align: center;
-}
-
-.booking-head ul h1{
-    font-size: 40px
-}
-
-.booking-head ul p2{
-    font-size: 30px;
-}
-
-/* -- Booking System -- */
-#tsubmit, #daysl, #fname, #sname, #pnum, #gmail, #sday, #lday{
-    font-size: 30px;
 }
