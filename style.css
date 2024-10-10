@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headings{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(121, 206, 255, 0.6), rgba(121, 206, 255, 0.6)), url(images/beachboy.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -- nav-links --*/
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links ul li::after{
+    width: 0;
+    height: 2px;
+    content: "";
+    background: lightseagreen;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* -- Sidding -- */
+
+.sidding ul img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 50px;
+    transform: translate(100px, 0);
+}
+
+/*-- Headlines -- */
+
+.headlines{
+    color: white;
+}
+
+.headlines h1{
+    font-size: 4.37vw;
+    position: relative;
+    font-family: "Gloock", Sans-serif;
+}
+
+.headlines p{
+    transform: translate(0, 50px);
+    font-size: 1.32vw;
+}
