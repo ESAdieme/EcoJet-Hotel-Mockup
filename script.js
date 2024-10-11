@@ -68,3 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }  
 }); 
+
+function confirmLeave() {
+    const userConfirmed = confirm("Warning: You are about to leave this page. Do you want to continue?");
+    if (userConfirmed) {
+        window.location.href = "https://www.youtube.com/watch?v=t4JFM3Ws0uA";
+    }
+} 
