@@ -36,7 +36,7 @@
 
 .nav-links ul li a{
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.15s opacity;
@@ -176,7 +176,7 @@
 /* -- Contact Information -- */
 
 .contactUs{
-    min-height: 110vh;
+    min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 198, 255, 0.6), rgba(9, 198, 255, 0.6)), url(images/Webp.net-gifmaker.gif);
     background-position: center;
