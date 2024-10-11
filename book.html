@@ -14,7 +14,7 @@
                     <ul>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="index.html"> Home</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=t4JFM3Ws0uA">Follow Us</a></li>
+                        <li><a href="#" id="followUs">Follow Us</a></li>
                     </ul>
                 </div>
                 <div class="booking-table">
@@ -46,6 +46,14 @@
                 </ul>
             </div>
         </section>
+        <script>
+            function confirmLeave() {
+                const userConfirmed = confirm("Warning: You are about to leave this page. Do you want to continue?");
+                if (userConfirmed) {
+                    window.location.href = "https://www.youtube.com/watch?v=t4JFM3Ws0uA";
+                }
+            } 
+        </script>
         <script src="script.js" defer></script>
     </body>
 </html>

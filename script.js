@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     const bookingForm = document.getElementById('bookingForm');
@@ -11,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
+    
     if (bookingForm) {
         bookingForm.addEventListener('submit', function(event) {
             if (!validateBookingForm()) {
@@ -20,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function validateContactForm() {
+    function validateConRZtactForm() {
         const fname = document.getElementById('fname').value.trim();
         const sname = document.getElementById('sname').value.trim();
         const pnum = document.getElementById('pnum').value.trim();
@@ -31,8 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!fname) errors.push('First Name is required.');
         if (!sname) errors.push('Last Name is required.');
         if (!pnum) errors.push('Phone Number is required.');
+        if(pnum.length < 3) errors.push('Phone Number is too short.');
         if (!gmail) errors.push('Email is required.');
-        if (!info) errors.push('Description is required.');
+        if (!info) errors.push('Description is required.'); 
+
 
         if (errors.length > 0) {
             alert(errors.join('\n'));
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!fname) errors.push('First Name is required.');
         if (!sname) errors.push('Last Name is required.');
         if (!pnum) errors.push('Phone Number is required.');
+        if(pnum.length < 3) errors.push('Phone Number is too short.');
         if (!gmail) errors.push('Email is required.');
         if (!sday) errors.push('Start Date is required.');
         if (!lday) errors.push('Last Date is required.');
@@ -65,4 +66,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return true;
     }  
-});
+}); 
