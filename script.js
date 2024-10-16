@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const errors = [];
 
         if (!fname) errors.push('First Name is required.');
-        if(!isNaN(fname)) error.push('There ')
         if (!sname) errors.push('Last Name is required.');
         if (!pnum) errors.push('Phone Number is required.');
         if(pnum.length < 3) errors.push('Phone Number is too short.');
